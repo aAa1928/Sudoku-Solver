@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Sudoku Solver</h1>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+          <td>
+            <input type="text" maxlength="1" oninput="validateInput(event)" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="button-container">
+      <button id="solve-button">Solve</button>
+      <button id="reset-button">Reset</button>
+    </div>
+
+    <footer>
+      <p>Created by Risheet Lenka</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
