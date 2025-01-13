@@ -2,11 +2,36 @@
   --border: 8px;
   --cell-border: 2px;
   --cell-font-size: 2em;
+  /* Light theme (default) */
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #000000;
+  --input-bg: transparent;
+  --user-input-bg: #lightgray;
+  --focus-bg: burlywood;
+  --solved-color: #555;
+}
+
+[data-theme="dark"] {
+  /* Dark theme */
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --border-color: #ffffff;
+  --input-bg: #2d2d2d;
+  --user-input-bg: #3d3d3d;
+  --focus-bg: #4a4a3d;
+  --solved-color: #aaa;
 }
 
 h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
 }
 
 table {
@@ -15,7 +40,7 @@ table {
 }
 
 td {
-  border: var(--cell-border) solid #000;
+  border: var(--cell-border) solid var(--border-color);
   width: 55px;
   height: 55px;
   text-align: center;
@@ -25,24 +50,24 @@ td {
 
 /* Add thicker borders for the 3x3 boxes */
 td:nth-child(3n) {
-  border-right: var(--border) solid #000;
+  border-right: var(--border) solid var(--border-color);
 }
 
 td:nth-child(3n + 1) {
-  border-left: var(--border) solid #000;
+  border-left: var(--border) solid var(--border-color);
 }
 
 tr:nth-child(3n) td {
-  border-bottom: var(--border) solid #000;
+  border-bottom: var(--border) solid var(--border-color);
 }
 
 tr:nth-child(3n + 1) td {
-  border-top: var(--border) solid #000;
+  border-top: var(--border) solid var(--border-color);
 }
 
 .cell:focus {
   outline: none;
-  background-color: burlywood;
+  background-color: var(--focus-bg);
   caret-color: transparent;
 }
 
@@ -52,7 +77,8 @@ input {
   text-align: center;
   border: none;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: var(--input-bg);
+  color: var(--text-color);
   padding: 0;
   margin: 0;
 }
@@ -60,13 +86,13 @@ input {
 .user-input {
   font-weight: bold;
   font-size: var(--cell-font-size);
-  background-color: lightgray;
+  background-color: var(--user-input-bg);
 }
 
 .solved-cell {
   font-weight: bolder;
   font-size: var(--cell-font-size);
-  color: #555;
+  color: var(--solved-color);
 }
 
 .button-container {

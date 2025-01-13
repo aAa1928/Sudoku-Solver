@@ -1,5 +1,10 @@
 "use strict";
 
+// Check for saved theme preference
+const savedTheme = localStorage.getItem("theme") || "light";
+document.body.setAttribute("data-theme", savedTheme);
+document.getElementById("dark-mode-toggle").checked = savedTheme === "dark";
+
 let grid = Array.from({ length: 9 }, () => Array(9).fill(0));
 
 // Identifies cells by row and column
@@ -94,6 +99,13 @@ document.getElementById("solve-button").addEventListener("click", () => {
       }
     });
   }
+});
+
+// Dark Mode Toggle
+document.getElementById("dark-mode-toggle").addEventListener("click", (e) => {
+  const theme = e.target.checked ? "dark" : "light";
+  document.body.setAttribute("data-theme", theme);
+  localStorage.setItem("theme", theme);
 });
 
 // Checks if a number can be placed in a cell
