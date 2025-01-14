@@ -140,6 +140,11 @@ footer {
 
 /* From Uiverse.io by cuzpq */
 .theme-checkbox {
+  position: relative;
+  top: unset;
+  right: unset;
+  margin: 0 auto 20px;
+  display: block;
   --toggle-size: 12px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -151,9 +156,6 @@ footer {
   background-position: 0;
   transition: 0.4s;
   border-radius: 99em;
-  position: absolute;
-  top: 15px;
-  right: 15px;
   cursor: pointer;
   font-size: var(--toggle-size);
 }
