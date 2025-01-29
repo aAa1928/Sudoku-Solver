@@ -21,6 +21,12 @@ document.querySelectorAll("table tbody tr").forEach((row, rowIndex) => {
       let newRow = row;
       let newCol = col;
 
+      // If a number key is pressed and there's already a value, clear it
+      if (/^[1-9]$/.test(event.key) && cell.value) {
+        cell.value = "";
+        return;
+      }
+
       switch (event.key) {
         case "ArrowUp":
         case "w":
